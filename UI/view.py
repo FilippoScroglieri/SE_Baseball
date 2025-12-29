@@ -42,7 +42,7 @@ class View:
         # Riga 2
         self.txt_out_squadre = ft.ListView(expand=1, spacing=10, padding=20, auto_scroll=False)
         cont = ft.Container(self.txt_out_squadre, width=300, height=200, alignment=ft.alignment.top_left,
-                            bgcolor="#deeded")
+                            bgcolor=ft.Colors.SURFACE)
         self.pulsante_crea_grafo = ft.ElevatedButton(text="Crea Grafo", on_click=self.controller.handle_crea_grafo)
         row2 = ft.Row([cont, self.pulsante_crea_grafo],
                       alignment=ft.MainAxisAlignment.CENTER,
